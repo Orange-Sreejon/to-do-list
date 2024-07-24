@@ -1,13 +1,10 @@
-// access input field
+
 const input = document.querySelector('#todo-input');
 
-// Listening to the click event from the "Add" button.
 document.querySelector('#submit').addEventListener('click', () => {
- // value of the input field
  const inputData = input.value;
 input.value = "";
 
- // creating todo item element
  const todo_el = document.createElement('div');
 todo_el.classList.add('todo-item');
 
@@ -44,16 +41,13 @@ todo_actions_el.appendChild(todo_delete_el);
 
 todo_el.appendChild(todo_actions_el);
  console.log(todo_el)
- // add the todo-item to lists
  document.querySelector('.todo-lists').appendChild(todo_el);
 
- // done functionality
 todo_done_el.addEventListener('click', () => {
   todo_input_el.classList.add('done')
   todo_el.removeChild(todo_actions_el);
 })
 
- // edit functionality
 todo_edit_el.addEventListener('click', (e) => {
   if (todo_edit_el.classList.contains("edit")) {
     todo_edit_el.classList.remove("edit");
@@ -71,7 +65,6 @@ todo_edit_el.addEventListener('click', (e) => {
   }
 });
 
- // delete functionality
 todo_delete_el.addEventListener('click', (e) => {
   console.log(todo_el);
   document.querySelector('.todo-lists').removeChild(todo_el);

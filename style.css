@@ -1,0 +1,69 @@
+body{
+    background: #bbbaaf;
+    padding: 0;
+    position:relative;
+
+}
+
+.hedding{
+    font-size: 60px;
+    text-align: center;
+    font-family: "Rubik";
+    color: #363636;
+}
+
+.input-wrapper{
+    margin: 20px auto;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit{
+    padding: 10px 20px;
+    background: #363636;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+#submit:hover{
+    background: #292828;
+}
+
+#todo-input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 3px;
+    transition: border-color 0.3s ease;
+}
+
+#todo-input:focus{
+    border-color: #666;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    transition: border-color 0.3s ease;
+    padding-left: 10px;
+    margin-right: 0;
+}
+
+#todo-list{
+    margin: 20px 0;
+}
+
+.todo-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+    cursor: pointer;
+
+    
+}
